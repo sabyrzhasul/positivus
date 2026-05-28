@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "sass:build": "sass src/styles/main.scss src/styles/main.css",
-    "sass:watch": "sass --watch src/styles/main.scss src/styles/main.css"
+    "sass:watch": "sass --watch src/styles/main.scss src/styles/main.css",
+    "predeploy": "npm run sass:build",
+    "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
@@ -18,8 +20,9 @@
   "bugs": {
     "url": "https://github.com/sabyrzhasul/positivus/issues"
   },
-  "homepage": "https://github.com/sabyrzhasul/positivus#readme",
+  "homepage": "https://sabyrzhasul.github.io/positivus",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "sass": "^1.100.0"
   }
 }
